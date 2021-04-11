@@ -1,0 +1,84 @@
+tr{
+	background-color: white;
+}
+
+tr:hover{
+	background-color: rgb(190, 245, 116);
+}
+
+figcaption{
+	font-size: inherit;
+}
+
+th{
+	background-color: #D0E3FA;
+}
+
+table
+{
+    border-collapse: collapse;  /*Les bordures du tableau seront collées (plus joli) */
+    text-align: center;
+}
+
+.Mdiv{
+	background-color: rgb(237, 237, 237);
+	box-shadow: 12px 12px 2px 1px rgba(179, 177, 145);
+	margin: 3%;
+	margin-bottom: 1%;
+	border-radius: 20px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+.Mdiv:hover{
+  background-color: rgba(237, 237, 237,0.6);
+}
+
+.MdivCentre{
+	text-align: center;
+}
+
+.MCentre{
+	text-align: center;
+}
+
+
+.Titre{
+	background-color: rgb(84, 249, 141);
+}
+
+.Titre > h2{
+	text-decoration: none;
+	text-align: center;
+}
+
+.IndiceChaleur{
+	text-align: inherit;
+}
+
+.LesHeurs{
+	background-color: #D0E3FA;
+	font-weight: bolder;
+
+}
+
+h1,h2{
+	text-align: center;
+}
+
+.MpLien{
+	display: inline;
+	font-size: 25px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+.MbtnMenu{
+	font-size: 40px;
+}
+
+
+span{
+	color: blue;
+}

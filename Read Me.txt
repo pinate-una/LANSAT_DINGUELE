@@ -1,0 +1,125 @@
+
+******************* Détailles sur l'auteur  *********************************
+
+Nom et Prénom: Dr. PINATIBI HYANN
+Enseignant Chercheur 
+Assistant à l'Université Nangui Abrogoua (Côte d'Ivoire)
+Laboratoire de Mathématiques et Informatique
+Informatique et Système d’Information Géographique (SIG) GSM : 79715429   
+
+
+
+******************* Guide d'utlisisation *********************************
+
+Le nom du projet: LANSAT_DINGUELE; c'est un projet PHP et la page d'acceueil est Geospaciale.php.
+
+
+LES OUTILLS NECESSAIRES:
+  ## Un gestionnaire de base de données: dans notre cas, nous avons utilisé XAMPP Version 5.6.30 sous Windowse
+  ## Lien de téléchargement: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/5.6.30/
+
+
+
+CONFIGURATION DU MATERIEL
+
+Copier le proget (LANSAT_DINGUELE) dans le chemien suivant: C:\xampp\htdocs
+
+ouvrir le dossier LANSAT_DINGUELE.
+Description du contenu du projet
+
+Le dossier data: ce dossier contient 5 fichier txt: 
+
+Si on a les lineamens, suivants,
+FID	 X1	        Y1	         X2	        Y2
+0	-7.32455712	8.72867944	-7.28805069	8.72309165
+1	-7.26017138	8.73869661	-7.29997451	8.73887727
+
+
+voila comment les repartir dans le dossier data.
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# fid.txt contiendra ceci:
+FID
+0
+1
+************************************************
+
+************************************************
+## x1.txt contiendra ceci:
+X1
+-7.32455712	
+-7.26017138	
+************************************************
+
+************************************************
+## y1.txt contiendra ceci:
+Y1
+8.72867944	
+8.73869661	
+************************************************
+
+************************************************
+## x2.txt contiendra ceci:
+X2
+-7.28805069	
+-7.29997451	
+************************************************
+
+************************************************
+## y2.txt contiendra ceci:
+Y2
+8.73887727
+8.73887727
+************************************************
+
+
+X1= longitude de début
+X2= longitude de fin
+
+Y1= latitude de début
+Y2= latitude de fin
+
+Les valeurs doivent être DES COORDONNEES GPS EN degret					
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+familles: C'est un dossier créer automatiquement; on a pas besoin de comprendre pour l'exéution.
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+bootstrape.css, Style.css: Ce sont des fichiers de Style.
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+data.csv: Créer automatiquement, contient l'orientation et la longueur de chaque lineament sous cette forme.
+FID	 LONGITUDE1(deg)	 LATITUDE1(deg)	 LONGITUDE2(deg)	 LATITUDE2(deg)	 TETADEG(DEG)	 LONGEUR(Km)
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Geospaciale.php: C'est la page d'aceuille; on l'ouvre dans un navigateur.
+Dans notre cas, on a utilisé  Mozilla Firefox; le chemin est: http://localhost/LANSAT_DINGUELE/statistiquesL.php
+En effet, c'est la mise en forme du fichier excel data.csv
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+IntersectionL.php: il contient le code des intersections. on ne l'ouvre pas directement.
+si Geospaciale.php a finit de charger, on clique sur le bouton intersection pour l'ouvrir.
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+statistiquesL.php:  il contient le code des statistiques: on ne l'ouvre pas directement aussi.
+si Geospaciale.php a finit de charger, on clique sur le bouton statistique pour l'ouvrir.
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Les_statatistiques.csv: il contient les statistiques exportés en excel sous cette forme:
+N° Family	 Orientation	 Lineament Number	 Nb Linea (%) 	 Min length (km)	 Max length (km)	 Average (km)
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+NB: data.csv, Les_statatistiques.csv et Les_statatistiques.csv représentent l'exportation en excel des résultats.
+Vous pouvez donc copier le contenu et le stocker là où vous voulez.
+Le projet LANSAT_DINGUELE constitue lui même un test; rassurez vous, il est opérationnel.
+
+
+
